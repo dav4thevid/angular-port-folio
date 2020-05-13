@@ -95,6 +95,10 @@
           <div class="progress pl-2 mb-5">NODE.JS
             <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
           </div>
+
+          <div class="progress pl-2 mb-5">FIREBASE
+            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
         </div>
       </div>
     </div>
@@ -104,15 +108,22 @@
 <section class = "projects">
   <div class = "container-fluid">
     <div class = "row ">
-        <div class = "col-12 text-header d-flex justify-content-center p-5">
+        <div class = "col-12 text-header d-flex justify-content-center p-3">
             <h1 class = "">PROJECTS
             <div class="header-bar2"></div>
             </h1>
         </div>
     </div>
-
-
-          <div class = "row ">
+    <div class = "row">
+      <div class = "col-sm-12 text-header d-flex justify-content-center mb-5">
+          <a (click)= "showPageAll()" class = "ml-4 mr-4" routerLinkActive="router-link-active" >ALL</a>
+          <a  (click)="showJavascriptPage()" class = "ml-4 mr-4" routerLinkActive="router-link-active" >JAVACRIPT</a>
+          <a (click)="showAngularPage()" class = "ml-4 mr-4"  routerLinkActive="router-link-active" >ANGULAR</a>
+          <a class = "ml-4 mr-4" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >NODE</a>
+          <a class = "ml-4 mr-4" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >REACT</a>
+      </div>
+    </div>
+          <div class = "row " *ngIf = "showAllPage">
               <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
                 <img class = "img-thumbnail" src = "../../assets/Antcorp 3.PNG" alt = "antcorp project">
               </div>
@@ -123,24 +134,43 @@
                 <img class = "img-thumbnail" src = "../../assets/YelpCamp.PNG" alt = "antcorp project">
               </div>
               <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
-                <img class = "img-thumbnail" src = "../../assets/AntCorp admin.PNG" alt = "antcorp project">
+                <img class = "img-thumbnail" src = "../../assets/Blog App.PNG" alt = "antcorp project">
               </div>
               <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
-                <img class = "img-thumbnail" src = "../../assets//Blog App.PNG" alt = "antcorp project">
+                <img class = "img-thumbnail" src = "../../assets/YelpCamp2.PNG" alt = "antcorp project">
               </div>
               <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
                 <img class = "img-thumbnail" src = "../../assets/Antcorp admin 3.PNG" alt = "antcorp project">
               </div>
-              <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
-                <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project">
-              </div>
-              <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
-                <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project">
-              </div>
-              <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
-                <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project">
-              </div>
+
+                <div class = "col-12 col-sm-6 col-md-4 m-0 p-0" >
+                  <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project">
+                </div>
+                <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
+                  <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project">
+                </div>
+                <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
+                  <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project">
+                </div>
+
           </div>
+
+          <div *ngIf = "showPageJavascript">
+            <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
+              <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project">
+            </div>
+            <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
+              <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project">
+            </div>
+          </div>
+
+          <div *ngIf = "showPageAngular">
+            <div class = "col-12 col-sm-6 col-md-4 m-0 p-0">
+              <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project">
+            </div>
+          </div>
+
+
 
     </div>
 
