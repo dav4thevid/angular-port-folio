@@ -1,4 +1,4 @@
-<!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Navbar w/ text</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
       Navbar text with an inline element
     </span>
   </div>
-</nav> -->
+</nav>
 
 <section>
   <div class = "container-fluid">
@@ -112,14 +112,14 @@
             </h1>
         </div>
     </div>
-    <div class = "row">
-      <div class = "col-sm-12 text-header d-flex justify-content-center mb-5">
-          <a (click)= "showPageAll()" class = "ml-4 mr-4" routerLinkActive="router-link-active" >ALL</a>
-          <a  (click)="showJavascriptPage()" class = "ml-4 mr-4" routerLinkActive="router-link-active" >JAVACRIPT</a>
-          <a (click)="showAngularPage()" class = "ml-4 mr-4"  routerLinkActive="router-link-active" >ANGULAR</a>
-          <a (click)="showNodePage()" class = "ml-4 mr-4"  routerLinkActive="router-link-active" >NODE</a>
-          <a (click)="showReactPage()" class = "ml-4 mr-4"  routerLinkActive="router-link-active" >REACT</a>
-          <a (click)="showIonicFirebasePage()" class = "ml-4 mr-4"  routerLinkActive="router-link-active" >IONIC/FIREBASE</a>
+    <div class = "row ">
+      <div class = "col-12 text-header d-flex justify-content-center mb-5">
+          <a (click)= "showPageAll()" routerLinkActive="router-link-active" >ALL</a>
+          <a  (click)="showJavascriptPage()" routerLinkActive="router-link-active" >JAVACRIPT</a>
+          <a (click)="showAngularPage()"  routerLinkActive="router-link-active" >ANGULAR</a>
+          <a (click)="showNodePage()" id = "node"  routerLinkActive="router-link-active" >NODE</a>
+          <!-- <a (click)="showReactPage()" class = "ml-4 mr-4"  routerLinkActive="router-link-active" >REACT</a>
+          <a (click)="showIonicFirebasePage()" class = "ml-4 mr-4"  routerLinkActive="router-link-active" >IONIC/FIREBASE</a> -->
       </div>
     </div>
           <div class = "row " *ngIf = "showAllPage">
@@ -206,41 +206,65 @@
         </div>
     </div>
 
-    <div class = "row">
-      <div class = "col-sm-6 col-md-3">
-        <div class="card text-center h-100">
-          <img class="card-img-top" src="IMG/magnifyingGlass.png" alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title">Some text</h4>
-            <p class="card-text">Some Text</p>
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6 col-md-3">
+          <div class="card text-center h-100">
+            <img class="card-img-top" src="" alt="Card image cap">
           </div>
-          <div class="card-footer">
-              <small class="text-muted">Some Text</small>
+          <h6 class = "font-weight-bold">Breaking Your Coder's Block</h6>
+           <small> April 29,2018</small>
+        </div>
+
+        <div class = "col-sm-6 col-md-3">
+          <div class="card text-center h-100">
+            <img class="card-img-top" src="../../assets/BlogApp2.PNG" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Some text</h4>
+              <p class="card-text">Some Text</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Some Text</small>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-sm-6 col-md-3">
+          <div class="card text-center h-100">
+            <img class="card-img-top" src="../../assets/BlogApp2.PNG" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Some text</h4>
+              <p class="card-text">Some Text</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Some Text</small>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-sm-6 col-md-3">
+          <div class="card text-center h-100">
+            <img class="card-img-top" src="../../assets/BlogApp2.PNG" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Some text</h4>
+              <p class="card-text">Some Text</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Some Text</small>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class = "col-sm-6 col-md-3">
-
-      </div>
-
-      <div class = "col-sm-6 col-md-3">
-
-      </div>
-
-      <div class = "col-sm-6 col-md-3">
-
-      </div>
-
-
     </div>
   </div>
+
+
 </section>
 
-<section id = "contact">
+<!-- <section id = "contact">
   <header>CONTACT</header>
 
-</section>
+</section> -->
 
 
 

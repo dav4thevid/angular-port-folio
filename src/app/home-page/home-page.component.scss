@@ -5,6 +5,7 @@
 .container-fluid {
   /* Location of the image */
   background-image: url(../../assets/download.png);
+  // background-color: red;
 
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -36,13 +37,39 @@
   color:white;
   margin-top:18%;
   margin-bottom:18%;
-  font-size: 30pt;
+  font-size: 4.5em;
   // font-family: "Raleway-semibold";
   font-family: 'Raleway', sans-serif;
   // font-family:Arial, Helvetica, sans-serif;
   z-index: 1;
-  line-height: 30pt;
+  line-height: 1.5em;
 }
+
+button .btn .btn-lg {
+  // border-radius: 0em;
+}
+
+@media only screen and (max-width:900px ) {
+  .homepage-text {
+    font-size: 2em
+  }
+}
+
+@media only screen and (max-width:600px ) {
+  .homepage-text {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width:320px ) {
+  .homepage-text {
+    font-size: 1.2em;
+  }
+}
+
+
+
+
 
 
 .highlight {

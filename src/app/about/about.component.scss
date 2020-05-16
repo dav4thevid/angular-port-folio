@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap');
+
+
 .icons {
   width:75px;
   height:75px;
@@ -21,10 +24,20 @@
   width: 70px;
 }
 
-
 .text-header {
   color: #444649;
 }
+
+.text-header > a {
+  // padding:50px;
+  padding-right: 2.2em;
+}
+
+#node {
+  padding-right:0em;
+}
+
+
 
 .projects{
   margin: 0rem;
@@ -46,4 +59,8 @@
   background: #252934;
   color: #fff;
   padding-top: 175px;
+}
+
+section {
+  font-family: 'Raleway', sans-serif;
 }
