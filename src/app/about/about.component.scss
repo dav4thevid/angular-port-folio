@@ -126,6 +126,41 @@ button:hover{
   background-color: #5bc0de;
 }
 
+#footer {
+  background: #1b242f;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#footer .footnote {
+  text-transform: uppercase;
+ color: #8f9aa7;
+ font-family: "Raleway";
+ font-size: 12px;
+}
+
+#highlight {
+  color: #e31b6d;
+  font-family: "Open Sans";
+}
+
+i{
+    background: #262f38;
+    cursor: pointer;
+    font-size: 18pt;
+    height: 55px;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    width: 55px;
+    color:white
+}
+
+i:hover{
+  background:#5bc0de
+}
 
 
 
