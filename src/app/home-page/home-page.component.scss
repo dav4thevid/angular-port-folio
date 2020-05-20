@@ -1,11 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap");
+
+.navbar3 {
+  background: none!important;
+}
+
+.navbar2 {
+  background: #464646;
+  // background: none;
+}
+
+nav a{
+  color:#fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+}
+
+.navbar-brand {
+  position: relative;
+  width: 40px;
+  margin-right: 50px;
+  left: 15px;
+  background-size: contain;
+  padding:0em;
 
 
+}
 
 .container-fluid {
   /* Location of the image */
   background-image: url(../../assets/download.png);
-  // background-color: red;
+  // background-color: purple;
 
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -24,7 +48,6 @@
   /* Set a background color that will be displayed
      while the background image is loading */
   // background-color: #464646;
-
 }
 
 // .container-fluid
@@ -33,13 +56,13 @@
 //   // background-image: url();
 // }
 
-.homepage-text{
-  color:white;
-  margin-top:18%;
-  margin-bottom:18%;
-  font-size: 4.5em;
+.homepage-text {
+  color: white;
+  margin-top: 18%;
+  margin-bottom: 18%;
+  font-size: 4em;
   // font-family: "Raleway-semibold";
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   // font-family:Arial, Helvetica, sans-serif;
   z-index: 1;
   line-height: 1.5em;
@@ -49,13 +72,13 @@ button .btn .btn-lg {
   // border-radius: 0em;
 }
 
-@media only screen and (max-width:900px ) {
+@media only screen and (max-width: 900px) {
   .homepage-text {
-    font-size: 2em
+    font-size: 2em;
   }
 }
 
-@media only screen and (max-width:600px ) {
+@media only screen and (max-width: 600px) {
   .homepage-text {
     font-size: 24px;
   }
@@ -67,17 +90,11 @@ button .btn .btn-lg {
 //   }
 // }
 
-
-
-
-
-
 .highlight {
   color: #e31b6d;
 }
 
-
 button {
-   margin-left:auto;
-   margin-right:auto;
- }
+  margin-left: auto;
+  margin-right: auto;
+}
