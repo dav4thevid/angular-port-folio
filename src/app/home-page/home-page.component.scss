@@ -1,11 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap");
 
-.navbar3 {
-  background: none!important;
+
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 }
+.navbar{
+  background-color: transparent !important;
+}
+// .navbar3 {
+//   background: none!important;
+// }
 
 .navbar2 {
-  background: #464646;
+  background: #464646 !important;
   // background: none;
 }
 
