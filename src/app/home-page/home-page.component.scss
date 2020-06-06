@@ -9,13 +9,15 @@
 }
 .navbar{
   background-color: transparent !important;
+  transition: background-color 0.7s ease-in-out;
 }
 // .navbar3 {
 //   background: none!important;
 // }
 
 .navbar2 {
-  background: #464646 !important;
+  background-color: #464646 !important;
+  transition: background-color 0.7s ease-in-out;
   // background: none;
 }
 

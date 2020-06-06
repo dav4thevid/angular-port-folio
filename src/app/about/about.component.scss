@@ -21,9 +21,9 @@ ul li a {
 }
 
 ul li a.active {
-  background-color: rgb(235, 97, 97);
+  background-color: rgb(207, 69, 69);
   color: #ffff;
-  // transition: left 0.9s ease-in-out;
+  transition: background-color 0.7s ;
 }
 
 .icons {
