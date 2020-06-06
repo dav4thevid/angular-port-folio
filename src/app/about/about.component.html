@@ -1,35 +1,3 @@
-<!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar w/ text</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarText"
-    aria-controls="navbarText"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"
-          >Home <span class="sr-only">(current)</span></a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-    </ul>
-    <span class="navbar-text">
-      Navbar text with an inline element
-    </span>
-  </div>
-</nav> -->
 
 <section>
   <div class="container-fluid">
@@ -217,21 +185,12 @@
     </div>
     <div class="row">
       <div class="col-12 text-header d-flex justify-content-center mb-5">
-        <a (click)="showPageAll()" routerLinkActive="router-link-active">ALL</a>
-        <a (click)="showJavascriptPage()" routerLinkActive="router-link-active"
-          >JAVACRIPT</a
-        >
-        <a (click)="showAngularPage()" routerLinkActive="router-link-active"
-          >ANGULAR</a
-        >
-        <a
-          (click)="showNodePage()"
-          id="node"
-          routerLinkActive="router-link-active"
-          >NODE</a
-        >
-        <!-- <a (click)="showReactPage()" class = "ml-4 mr-4"  routerLinkActive="router-link-active" >REACT</a>
-          <a (click)="showIonicFirebasePage()" class = "ml-4 mr-4"  routerLinkActive="router-link-active" >IONIC/FIREBASE</a> -->
+        <ul>
+          <li *ngFor="let tool of tools" (click)="setTools(tool)">
+            <a [class.active]="tool===activeTool">{{tool}}</a>
+          </li>
+        </ul>
+
       </div>
     </div>
     <div class="row" *ngIf="showAllPage">
@@ -301,51 +260,69 @@
       </div>
     </div>
 
-    <div *ngIf="showPageJavascript">
+    <div class="row" *ngIf="showPageJavascript">
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         <img
-          class="img-thumbnail"
-          src="../../assets/antcorp dash login.PNG"
-          alt="antcorp project"
-        />
+        class="img-thumbnail"
+        src="../../assets/YelpCamp.PNG"
+        alt="antcorp project"
+      />
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         <img
           class="img-thumbnail"
-          src="../../assets/antcorp dash login.PNG"
-          alt="antcorp project"
-        />
-      </div>
-    </div>
-
-    <div *ngIf="showPageAngular">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
-          class="img-thumbnail"
-          src="../../assets/antcorp dash login.PNG"
+          src="../../assets/Blog App.PNG"
           alt="antcorp project"
         />
       </div>
     </div>
 
-    <div *ngIf="showPageNode">
+    <div class="row" *ngIf="showPageAngular">
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        Node
-        <!-- <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project"> -->
+        <img
+        class="img-thumbnail"
+        src="../../assets/Antcorp 3.PNG"
+        alt="antcorp project"
+      />
       </div>
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
+        <img
+        class="img-thumbnail"
+        src="../../assets/Avian.PNG"
+        alt="antcorp project"
+      />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
+        <img
+        class="img-thumbnail"
+        src="../../assets/diamond.PNG"
+        alt="antcorp project"
+      />
+      </div>
+    </div>
+
+    <div class="row" *ngIf="showPageNode">
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
+        <img
+          class="img-thumbnail"
+          src="../../assets/Blog App.PNG"
+          alt="antcorp project"
+        />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
+        <img
+          class="img-thumbnail"
+          src="../../assets/YelpCamp.PNG"
+          alt="antcorp project"
+        />
+      </div>
+
     </div>
 
     <div *ngIf="showPageReact">
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         React
-        <!-- <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project"> -->
-      </div>
-    </div>
-
-    <div *ngIf="showPageIonicFirebase">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        Ionic/Firebase
-        <!-- <img class = "img-thumbnail" src = "../../assets/antcorp dash login.PNG" alt = "antcorp project"> -->
+        <img class = "img-thumbnail" src = "../../assets/react.PNG" alt = "antcorp project">
       </div>
     </div>
   </div>

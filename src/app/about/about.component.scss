@@ -1,6 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap');
 
 
+// a{
+//   cursor: pointer
+// }
+
+// a:active{
+//   background-color: red;
+//   color:white;
+// }
+
+ul li {
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  cursor: pointer;
+  transition: left 0.5s ease-in-out;
+}
+
+ul li a {
+  color: #000;
+  display: block;
+  position: relative;
+  line-height: 32px;
+  padding: 0 25px 0 25px;
+  white-space: nowrap;
+  // transition: left 0.5s ease-in-out;
+}
+
+ul li a.active {
+  background-color: rgb(235, 97, 97);
+  color: #ffff;
+  // transition: left 0.9s ease-in-out;
+}
+
 .icons {
   width:75px;
   height:75px;

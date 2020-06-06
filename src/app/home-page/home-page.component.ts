@@ -19,7 +19,10 @@ export class HomePageComponent implements OnInit {
 
 onWindowScroll(e) {
     let element = document.querySelector('.navbar');
-    if (window.pageYOffset > element.clientHeight) {
+    if (window.pageYOffset > element.clientHeight)
+
+    {
+      // console.dir(element)
       element.classList.add('navbar2');
     } else {
       element.classList.remove('navbar2');
