@@ -10,6 +10,16 @@ ul li {
   transition: left 0.5s ease-in-out;
 }
 
+h5  {
+  font-size:1em !important;
+}
+
+.highlight2 {
+  color:lightslategray
+}
+
+
+
 ul li a {
   color: #000;
   display: block;
@@ -18,6 +28,16 @@ ul li a {
   padding: 0 25px 0 25px;
   white-space: nowrap;
   // transition: left 0.5s ease-in-out;
+}
+
+.image{
+  height:auto;
+  width: 65%;
+  border-radius: 5px;
+  // width:100%;
+  // height:auto;
+  object-fit:cover;
+  object-position:50% 50%;
 }
 
 ul li a.active {
@@ -33,6 +53,7 @@ ul li a.active {
 
 .progress{
   border-radius: 0em;
+  margin-bottom:35px;
 }
 
 .header-bar {
@@ -54,6 +75,12 @@ ul li a.active {
   color: #444649;
   font-family: 'Raleway', sans-serif;
   font-weight: 800 !important;
+}
+
+.text-content {
+  font-family: 'Raleway', sans-serif;
+  font-size:0.8em;
+  font-weight: bolder;
 }
 
 .contact{
@@ -178,7 +205,7 @@ button:hover{
 }
 
 i{
-    background: #262f38;
+    background-color: #262f38;
     cursor: pointer;
     font-size: 18pt;
     height: 55px;
@@ -186,13 +213,14 @@ i{
     overflow: hidden;
     position: relative;
     text-align: center;
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    // transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
     width: 55px;
     color:white;
 }
 
 i:hover{
-  background:#5bc0de;
+  background-color:#5bc0de;
+  transition: background-color 0.5s;
 }
 
 

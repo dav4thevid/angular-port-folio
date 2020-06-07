@@ -1,9 +1,8 @@
-
 <section>
   <div class="container-fluid">
     <div class="row">
-      <div class="col  d-flex justify-content-center p-5">
-        <h1 class="headers">
+      <div class="col d-flex justify-content-center p-5">
+        <h1 class="headers mb-4">
           ABOUT
           <!-- <div class="header-bar"></div> -->
         </h1>
@@ -61,22 +60,23 @@
     <div class="container">
       <div class="row mt-5 text-center">
         <div class="col-sm-12 col-md-6">
-          <div class="img-responsive img-fluid">
-            <img src="../../assets/ede.PNG" />
+          <div>
+            <img class="image img-thumbnail" src="../../assets/upload22.png" />
+            <div>
+              <h5 class="text-content highlight2">Who's this guy?</h5>
+              <p class="text-content">
+                  A <span class = "highlight2">Web | Mobile</span> Developer from Lagos, Nigeria.<br>
+                  I have serious passion for <span class = "highlight2">UI effects, animations and<br> creating
+                  intuitive, dynamic user experiences.</span><br> Let's make something
+                  special.
+              </p>
+            </div>
           </div>
-          <h4 class="text-header">Who's this guy?</h4>
-          <p class="text-content">
-            Im a Front End Developer from Lagos Nigeria
-          </p>
-          <p class="text-content">
-            I have serious passion for UI effects, animations and creating
-            intuitive, dynamic user experiences. Let's make something special.
-          </p>
         </div>
         <div class="col-sm-12 col-md-6">
-          <div class="text-header mb-5">
-            <h2 class="headers mb-4">TOOLS</h2>
-            <div class="progress pl-2 mb-5">
+          <div class="text-header">
+            <h2 class="headers mb-5">TOOLS</h2>
+            <div class="progress pl-2">
               HTML
               <span
                 class="progress-bar"
@@ -89,7 +89,7 @@
               >
             </div>
           </div>
-          <div class="progress pl-2 mb-5">
+          <div class="progress pl-2">
             CSS
             <div
               class="progress-bar"
@@ -102,7 +102,7 @@
               80%
             </div>
           </div>
-          <div class="progress pl-2 mb-5">
+          <div class="progress pl-2">
             JAVASCRIPT
             <div
               class="progress-bar"
@@ -115,7 +115,7 @@
               78%
             </div>
           </div>
-          <div class="progress pl-2 mb-5">
+          <div class="progress pl-2">
             REACT
             <div
               class="progress-bar"
@@ -128,7 +128,7 @@
               50%
             </div>
           </div>
-          <div class="progress progress-stripped pl-2 mb-5">
+          <div class="progress progress-stripped pl-2">
             ANGULAR
             <div
               class="progress-bar progress-stripped"
@@ -141,7 +141,7 @@
               70%
             </div>
           </div>
-          <div class="progress pl-2 mb-5">
+          <div class="progress pl-2">
             IONIC/FIREBASE
             <div
               class="progress-bar"
@@ -154,7 +154,7 @@
               58%
             </div>
           </div>
-          <div class="progress pl-2 mb-5">
+          <div class="progress pl-2">
             NODE.JS
             <div
               class="progress-bar"
@@ -173,11 +173,11 @@
   </div>
 </section>
 
-<section class="projects">
+<section class="projects ">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 d-flex justify-content-center p-3">
-        <h1 class="headers">
+        <h1 class="headers mb-5">
           PROJECTS
         </h1>
       </div>
@@ -186,10 +186,9 @@
       <div class="col-12 text-header d-flex justify-content-center mb-5">
         <ul>
           <li *ngFor="let tool of tools" (click)="setTools(tool)">
-            <a [class.active]="tool===activeTool">{{tool}}</a>
+            <a [class.active]="tool === activeTool">{{ tool }}</a>
           </li>
         </ul>
-
       </div>
     </div>
     <div class="row" *ngIf="showAllPage">
@@ -262,10 +261,10 @@
     <div class="row" *ngIf="showPageJavascript">
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         <img
-        class="img-thumbnail"
-        src="../../assets/YelpCamp.PNG"
-        alt="antcorp project"
-      />
+          class="img-thumbnail"
+          src="../../assets/YelpCamp.PNG"
+          alt="antcorp project"
+        />
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         <img
@@ -286,24 +285,24 @@
     <div class="row" *ngIf="showPageAngular">
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         <img
-        class="img-thumbnail"
-        src="../../assets/antcorp dash login.PNG"
-        alt="antcorp project"
-      />
+          class="img-thumbnail"
+          src="../../assets/antcorp dash login.PNG"
+          alt="antcorp project"
+        />
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         <img
-        class="img-thumbnail"
-        src="../../assets/Avian.PNG"
-        alt="antcorp project"
-      />
+          class="img-thumbnail"
+          src="../../assets/Avian.PNG"
+          alt="antcorp project"
+        />
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         <img
-        class="img-thumbnail"
-        src="../../assets/diamond.PNG"
-        alt="antcorp project"
-      />
+          class="img-thumbnail"
+          src="../../assets/diamond.PNG"
+          alt="antcorp project"
+        />
       </div>
     </div>
 
@@ -322,12 +321,15 @@
           alt="antcorp project"
         />
       </div>
-
     </div>
 
-    <div class = "row" *ngIf="showPageReact">
+    <div class="row" *ngIf="showPageReact">
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img class = "img-thumbnail" src = "../../assets/react.PNG" alt = "antcorp project">
+        <img
+          class="img-thumbnail"
+          src="../../assets/react.PNG"
+          alt="antcorp project"
+        />
       </div>
     </div>
   </div>
@@ -337,9 +339,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 d-flex justify-content-center p-3">
-        <h1 class="headers">
+        <h1 class="headers mb-5">
           BLOGS
-     
         </h1>
       </div>
     </div>
@@ -417,14 +418,16 @@
           class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4"
         >
           <h1 class="py-4 text-truncate contact">CONTACT</h1>
-          <p class = "py-2 text-info font-weight-bold">Have a question or want to work with me?</p>
+          <p class="py-2 text-info font-weight-bold">
+            Have a question or want to work with me?
+          </p>
           <div class="px-2">
-            <form action="" class="justify-content-center ">
+            <form action="" class="justify-content-center">
               <div class="form-group mb-1">
                 <label class="sr-only">Name</label>
                 <input
                   type="text"
-                  class="form-control rounded-0 "
+                  class="form-control rounded-0"
                   placeholder="Jane Doe"
                 />
               </div>
@@ -436,20 +439,22 @@
                   placeholder="jane.doe@example.com"
                 />
               </div>
-              <div class = "form-group mb-1">
+              <div class="form-group mb-1">
                 <label class="sr-only">Message</label>
-              <textarea
-                class="form-control rounded-0"
-                id="exampleFormControlTextarea1"
-                rows="4"
-              ></textarea>
-            </div>
-            <div class = "d-flex justify-content-end">
-              <button type="submit" class=" btn btn-outline-dark btn-lg rounded-0">
-                SUBMIT
-              </button>
-            </div>
-
+                <textarea
+                  class="form-control rounded-0"
+                  id="exampleFormControlTextarea1"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button
+                  type="submit"
+                  class="btn btn-outline-dark btn-lg rounded-0"
+                >
+                  SUBMIT
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -458,9 +463,9 @@
   </div>
 </section>
 
-<section id = "footer">
-  <div class = "container">
-    <div class = "row">
+<section id="footer">
+  <div class="container">
+    <div class="row">
       <div class="col-12 d-flex justify-content-center">
         <a href="https://www.github.com/dav4thevid">
           <div class="flex icon" id="icon-2">
@@ -468,7 +473,7 @@
           </div>
         </a>
         <a href="https://www.facebook.com/davoucii" target="_blank">
-          <div class="flex icon " id="icon-3">
+          <div class="flex icon" id="icon-3">
             <i class="fa fa-facebook-f fa-lg pt-3"></i>
           </div>
         </a>
@@ -484,9 +489,9 @@
         </a>
       </div>
     </div>
-    <div class = "row mt-5">
-      <div class = "col-12 d-flex justify-content-center">
-        <p class = "footnote">Dave Davoucii <span id = "highlight">© 2020</span></p>
+    <div class="row mt-5">
+      <div class="col-12 d-flex justify-content-center">
+        <p class="footnote">Dave Davoucii <span id="highlight">© 2020</span></p>
       </div>
     </div>
   </div>
