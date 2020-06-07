@@ -43,7 +43,12 @@ ul li a {
 ul li a.active {
   background-color: rgb(207, 69, 69);
   color: #ffff;
+  font-weight: bolder;
   transition: background-color 0.7s ;
+}
+
+a{
+  font-weight: bolder;
 }
 
 .icons {
