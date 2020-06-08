@@ -7,6 +7,26 @@ import {faFighterJet} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
+  showText: Boolean
+  constructor() {
+    this.showText = false;
+    this.showText = false;
+   }
+
+  ngOnInit() {
+  }
+
+  hideTextFunction(event) {
+    this.showText = false;
+  }
+
+  showTextFunction(event) {
+    this.showText = true;
+  }
+
+
+  showTextDiamond: Boolean
+
   showAllPage = true;
   showPageJavascript = false;
   showPageAngular = false;
@@ -24,6 +44,7 @@ export class AboutComponent implements OnInit {
     'REACT',
   ];
 
+
   setTools(tool) {
     this.activeTool = tool;
     console.log(tool);
@@ -39,8 +60,7 @@ export class AboutComponent implements OnInit {
       this.showAllPage = false;
       this.showPageReact = false;
       this.showPageAngular = false;
-    }
-      else if (tool === 'NODE') {
+    } else if (tool === 'NODE') {
       this.showPageNode = true;
       this.showPageJavascript = false;
       this.showAllPage = false;
@@ -61,15 +81,10 @@ export class AboutComponent implements OnInit {
     }
   }
 
-  toggleTools() {
-
-  }
 
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+
 
 
 

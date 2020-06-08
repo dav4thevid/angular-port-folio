@@ -174,16 +174,16 @@
 </section>
 
 <section class="projects ">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-12 d-flex justify-content-center p-3">
-        <h1 class="headers mb-5">
+      <div class="col-12 d-flex justify-content-center p-5">
+        <h1 class="headers mb-4">
           PROJECTS
         </h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 text-header d-flex justify-content-center mb-5">
+      <div class="col-12 text-header d-flex justify-content-center">
         <ul>
           <li *ngFor="let tool of tools" (click)="setTools(tool)">
             <a [class.active]="tool === activeTool">{{ tool }}</a>
@@ -192,19 +192,39 @@
       </div>
     </div>
     <div class="row" *ngIf="showAllPage">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseover) = "showTextFunction($event)" (mouseout)="hideTextFunction($event)">
+        <img *ngIf="!showText"
           class="img-thumbnail"
           src="../../assets/Antcorp 3.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="showText" >
+          <p class = "d-flex justify-content-center mt-4"
+            >AntCorp
+          </p>
+          <small class = "d-flex justify-content-center">Angular / Django</small>
+        <div class = "d-flex justify-content-center mt-3">
+          <button class = "btn btn-info ">More Info</button>
+        </div>
+        </div>
+
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseover) = "showTextFunction($event)" (mouseout)="hideTextFunction($event)">
+        <img *ngIf="!showText"
           class="img-thumbnail"
           src="../../assets/diamond.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="showText" >
+          <p class = "d-flex justify-content-center mt-4"
+            >AntCorp
+          </p>
+          <small class = "d-flex justify-content-center">Angular / Django</small>
+        <div class = "d-flex justify-content-center mt-3">
+          <button class = "btn btn-info ">More Info</button>
+        </div>
+        </div>
+
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         <img
