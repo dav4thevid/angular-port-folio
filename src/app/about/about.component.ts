@@ -11,12 +11,22 @@ export class AboutComponent implements OnInit {
   showTextDiamond: boolean;
   showTextYelpCamp: boolean;
   showTextBlogApp: boolean;
+  showPataApp: boolean;
+  antcorpAdmin: boolean;
+  reactPortFolio: boolean;
+  rgbGame: boolean;
+  antcorpUser: boolean;
 
     constructor() {
     this.showTextAntcorp = false;
     this.showTextDiamond = false;
     this.showTextYelpCamp = false;
     this.showTextBlogApp = false;
+    this.showPataApp = false;
+    this.antcorpAdmin = false;
+    this.reactPortFolio = false;
+    this.rgbGame = false;
+    this.antcorpUser = false;
    }
 
   ngOnInit() {
