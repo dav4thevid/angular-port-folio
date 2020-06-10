@@ -341,26 +341,38 @@
     </div>
 
     <div class="row" *ngIf="showPageJavascript">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showPataTap = true" (mouseleave)="showPataTap = false">
         <img
-          class="img-thumbnail"
-          src="../../assets/YelpCamp.PNG"
+          class="img-thumbnail img-fluid" *ngIf="!showPataTap"
+          src="../../assets/pata tap3.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="showPataTap" >
+          <p class = "d-flex justify-content-center mt-4"
+            >PataTap SoundGame
+          </p>
+          <small class = "d-flex justify-content-center">Javascript </small>
+          <div class = "d-flex justify-content-center mt-3">
+            <button class = "btn btn-info ">More Info</button>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
-          class="img-thumbnail"
-          src="../../assets/Blog App.PNG"
-          alt="antcorp project"
-        />
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
+
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "rgbGame = true" (mouseleave)="rgbGame = false">
+        <img *ngIf = "!rgbGame"
           class="img-thumbnail"
           src="../../assets/newnew.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="rgbGame" >
+          <p class = "d-flex justify-content-center mt-4"
+            >Rgb Game
+          </p>
+          <small class = "d-flex justify-content-center">Javascript</small>
+          <div class = "d-flex justify-content-center mt-3">
+            <button class = "btn btn-info ">More Info</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -416,19 +428,37 @@
     </div>
 
     <div class="row" *ngIf="showPageNode">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showTextBlogApp = true" (mouseleave)="showTextBlogApp = false">
         <img
-          class="img-thumbnail"
+          class="img-thumbnail img-fluid" *ngIf = "!showTextBlogApp"
           src="../../assets/Blog App.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="showTextBlogApp" >
+          <p class = "d-flex justify-content-center mt-4"
+            >Restfull Blog App
+          </p>
+          <small class = "d-flex justify-content-center">Javascript </small>
+          <div class = "d-flex justify-content-center mt-3">
+            <button class = "btn btn-info ">More Info</button>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
-          class="img-thumbnail"
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter)="showTextYelpCamp = true" (mouseleave)="showTextYelpCamp = false">
+        <img *ngIf="!showTextYelpCamp"
+          class="img-thumbnail img-fluid"
           src="../../assets/YelpCamp.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="showTextYelpCamp" >
+          <p class = "d-flex justify-content-center mt-4"
+            >YelpCamp
+          </p>
+          <small class = "d-flex justify-content-center">NodeJs </small>
+        <div class = "d-flex justify-content-center mt-3">
+          <button class = "btn btn-info ">More Info</button>
+        </div>
+        </div>
       </div>
     </div>
 
