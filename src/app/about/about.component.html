@@ -224,7 +224,6 @@
           <button class = "btn btn-info ">More Info</button>
         </div>
         </div>
-
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter)="showTextYelpCamp = true" (mouseleave)="showTextYelpCamp = false">
         <img *ngIf="!showTextYelpCamp"
@@ -365,27 +364,54 @@
       </div>
     </div>
 
-    <div class="row" *ngIf="showPageAngular">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
+    <div class="row" *ngIf="showPageAngular" >
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "antcorpUser = true" (mouseleave)="antcorpUser = false">
+        <img *ngIf = "!antcorpUser"
           class="img-thumbnail"
           src="../../assets/antcorp dash login.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="antcorpUser" >
+          <p class = "d-flex justify-content-center mt-4"
+            >Antcorp User Dashboard
+          </p>
+          <small class = "d-flex justify-content-center">Angular / Django</small>
+          <div class = "d-flex justify-content-center mt-3">
+            <button class = "btn btn-info ">More Info</button>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "antcorpAdmin = true" (mouseleave)="antcorpAdmin = false">
+        <img *ngIf = "!antcorpAdmin"
           class="img-thumbnail"
-          src="../../assets/Avian.PNG"
+          src="../../assets/Antcorp admin 3.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="antcorpAdmin" >
+          <p class = "d-flex justify-content-center mt-4"
+            >Antcorp Admin Dashboard
+          </p>
+          <small class = "d-flex justify-content-center">Angular / Django </small>
+          <div class = "d-flex justify-content-center mt-3">
+            <button class = "btn btn-info ">More Info</button>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
-          class="img-thumbnail"
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showTextDiamond = true" (mouseleave)="showTextDiamond = false">
+        <img *ngIf="!showTextDiamond"
+          class="img-thumbnail img-fluid"
           src="../../assets/diamond.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="showTextDiamond" >
+          <p class = "d-flex justify-content-center mt-4"
+            >Diamond BTC
+          </p>
+          <small class = "d-flex justify-content-center">Angular / Python</small>
+        <div class = "d-flex justify-content-center mt-3">
+          <button class = "btn btn-info ">More Info</button>
+        </div>
+        </div>
       </div>
     </div>
 
@@ -406,13 +432,23 @@
       </div>
     </div>
 
-    <div class="row" *ngIf="showPageReact">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
+
+      <div class="row" *ngIf="showPageReact">
+          <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "reactPortFolio = true" (mouseleave)="reactPortFolio = false">
+        <img *ngIf = "!reactPortFolio"
           class="img-thumbnail"
           src="../../assets/react.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="reactPortFolio" >
+          <p class = "d-flex justify-content-center mt-4"
+            >My React Port Folio Page
+          </p>
+          <small class = "d-flex justify-content-center">React</small>
+          <div class = "d-flex justify-content-center mt-3">
+            <button class = "btn btn-info ">More Info</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
