@@ -192,13 +192,13 @@
       </div>
     </div>
     <div class="row" *ngIf="showAllPage">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseover) = "showTextFunction($event)" (mouseout)="hideTextFunction($event)">
-        <img *ngIf="!showText"
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showTextAntcorp = true" (mouseleave)="showTextAntcorp = false">
+        <img *ngIf="!showTextAntcorp"
           class="img-thumbnail"
           src="../../assets/Antcorp 3.PNG"
           alt="antcorp project"
         />
-        <div *ngIf="showText" >
+        <div *ngIf="showTextAntcorp" >
           <p class = "d-flex justify-content-center mt-4"
             >AntCorp
           </p>
@@ -209,36 +209,54 @@
         </div>
 
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseover) = "showTextFunction($event)" (mouseout)="hideTextFunction($event)">
-        <img *ngIf="!showText"
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showTextDiamond = true" (mouseleave)="showTextDiamond = false">
+        <img *ngIf="!showTextDiamond"
           class="img-thumbnail"
           src="../../assets/diamond.PNG"
           alt="antcorp project"
         />
-        <div *ngIf="showText" >
+        <div *ngIf="showTextDiamond" >
           <p class = "d-flex justify-content-center mt-4"
-            >AntCorp
+            >Diamond BTC
           </p>
-          <small class = "d-flex justify-content-center">Angular / Django</small>
+          <small class = "d-flex justify-content-center">Angular / Python</small>
         <div class = "d-flex justify-content-center mt-3">
           <button class = "btn btn-info ">More Info</button>
         </div>
         </div>
 
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
-        <img
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter)="showTextYelpCamp = true" (mouseleave)="showTextYelpCamp = false">
+        <img *ngIf="!showTextYelpCamp"
           class="img-thumbnail"
           src="../../assets/YelpCamp.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="showTextYelpCamp" >
+          <p class = "d-flex justify-content-center mt-4"
+            >YelpCamp
+          </p>
+          <small class = "d-flex justify-content-center">NodeJs </small>
+        <div class = "d-flex justify-content-center mt-3">
+          <button class = "btn btn-info ">More Info</button>
+        </div>
+        </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showTextBlogApp = true" (mouseleave)="showTextBlogApp = false">
         <img
-          class="img-thumbnail"
+          class="img-thumbnail" *ngIf = "!showTextBlogApp"
           src="../../assets/Blog App.PNG"
           alt="antcorp project"
         />
+        <div *ngIf="showTextBlogApp" >
+          <p class = "d-flex justify-content-center mt-4"
+            >Restfull Blog App
+          </p>
+          <small class = "d-flex justify-content-center">Javascript </small>
+        <div class = "d-flex justify-content-center mt-3">
+          <button class = "btn btn-info ">More Info</button>
+        </div>
+        </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0">
         <img

@@ -7,25 +7,21 @@ import {faFighterJet} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  showText: Boolean
-  constructor() {
-    this.showText = false;
-    this.showText = false;
+  showTextAntcorp: boolean;
+  showTextDiamond: boolean;
+  showTextYelpCamp: boolean;
+  showTextBlogApp: boolean;
+
+    constructor() {
+    this.showTextAntcorp = false;
+    this.showTextDiamond = false;
+    this.showTextYelpCamp = false;
+    this.showTextBlogApp = false;
    }
 
   ngOnInit() {
   }
 
-  hideTextFunction(event) {
-    this.showText = false;
-  }
-
-  showTextFunction(event) {
-    this.showText = true;
-  }
-
-
-  showTextDiamond: Boolean
 
   showAllPage = true;
   showPageJavascript = false;
