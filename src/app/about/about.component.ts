@@ -40,7 +40,6 @@ export class AboutComponent implements OnInit {
     this.modalService.open(ModalComponent);
   }
 
-
   showAllPage = true;
   showPageJavascript = false;
   showPageAngular = false;

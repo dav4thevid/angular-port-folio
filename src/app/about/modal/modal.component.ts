@@ -14,8 +14,8 @@ export class ModalComponent implements OnInit {
   ngOnInit() {
   }
 
-  dismissModal() {
-    this.modalService.dismissAll;
+  dismissPopUp() {
+    this.modalService.dismissAll();
   }
 
 }
