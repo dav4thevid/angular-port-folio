@@ -1,4 +1,6 @@
+import { ModalComponent } from './modal/modal.component';
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import {faFighterJet} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -17,7 +19,9 @@ export class AboutComponent implements OnInit {
   rgbGame: boolean;
   antcorpUser: boolean;
 
-    constructor() {
+    constructor(
+      private modalService: NgbModal,
+    ) {
     this.showTextAntcorp = false;
     this.showTextDiamond = false;
     this.showTextYelpCamp = false;
@@ -30,6 +34,10 @@ export class AboutComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  openModal() {
+    this.modalService.open(ModalComponent);
   }
 
 
@@ -86,15 +94,4 @@ export class AboutComponent implements OnInit {
       this.showPageNode = false;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
 }

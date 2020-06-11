@@ -8,20 +8,24 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutComponent } from './about/about.component';
 
+import { ModalComponent } from './about/modal/modal.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-
     HomePageComponent,
-    AboutComponent
+    AboutComponent,
+    ModalComponent
   ],
   imports: [
     FontAwesomeModule,
-    NgbModule.forRoot(),
+    // NgbModule.forRoot(),
+    NgbModule,
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ ModalComponent]
 })
 export class AppModule { }
