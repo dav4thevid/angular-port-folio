@@ -341,13 +341,13 @@
     </div>
 
     <div class="row" *ngIf="showPageJavascript">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showPataTap = true" (mouseleave)="showPataTap = false">
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showPageJavascript = true" (mouseleave)="showPageJavascript= false">
         <img
-          class="img-thumbnail img-fluid" *ngIf="!showPataTap"
+          class="img-thumbnail img-fluid" *ngIf="!showPageJavascript"
           src="../../assets/pata tap3.PNG"
           alt="antcorp project"
         />
-        <div *ngIf="showPataTap" >
+        <div *ngIf="showPageJavascript" >
           <p class = "d-flex justify-content-center mt-4"
             >PataTap SoundGame
           </p>

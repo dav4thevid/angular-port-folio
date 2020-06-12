@@ -31,6 +31,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ModalComponent implements OnInit {
 
   @Input() title;
+  @Input() body;
+  @Input() imageUrl;
 
   constructor(private modalService: NgbModal, private activeModal : NgbActiveModal) { }
 
