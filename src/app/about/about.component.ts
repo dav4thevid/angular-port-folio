@@ -19,6 +19,24 @@ export class AboutComponent implements OnInit {
   rgbGame: boolean;
   antcorpUser: boolean;
 
+  showAllPage = true;
+  showPageJavascript = false;
+  showPageAngular = false;
+  showPageNode = false;
+  showPageReact = false;
+  showPageIonicFirebase = false;
+
+  activeTool = 'ALL';
+
+  tools = [
+    'ALL',
+    'VANNILA JS',
+    'NODE',
+    'ANGULAR',
+    'REACT',
+  ];
+
+
     constructor(
       private modalService: NgbModal,
     ) {
@@ -36,16 +54,15 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
-  // openModal() {
-  //   this.modalService.open(ModalComponent);
-  //   modalRef.componentInstance.name = 'World';
-  // }
-
   openAntCorp() {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'Antcorp';
     modalRef.componentInstance.imageUrl = '../../../assets/Antcorp 3.PNG';
-    modalRef.componentInstance.body = 'Antcorp is a financial expertise and cutting-edge technology that help groups, cooperatives, and communities achieve their goals by planning, saving and investing their money in a convenient, reliable and highly rewarding manner.';
+    modalRef.componentInstance.body = `Antcorp is a financial expertise
+                                       and cutting-edge technology that help groups, cooperatives,
+                                       and communities achieve their goals by planning,
+                                       saving and investing their money in a convenient,
+                                       reliable and highly rewarding manner.`;
   }
 
   openDiamond() {
@@ -55,22 +72,8 @@ export class AboutComponent implements OnInit {
     modalRef.componentInstance.body = 'Buying and Selling of bitcoin made easy';
   }
 
-  showAllPage = true;
-  showPageJavascript = false;
-  showPageAngular = false;
-  showPageNode = false;
-  showPageReact = false;
-  showPageIonicFirebase = false;
 
-  activeTool = 'ALL';
 
-  tools = [
-    'ALL',
-    'VANNILA JS',
-    'NODE',
-    'ANGULAR',
-    'REACT',
-  ];
 
 
   setTools(tool) {
