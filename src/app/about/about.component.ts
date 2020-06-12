@@ -92,8 +92,34 @@ export class AboutComponent implements OnInit {
   openPataTap() {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'PataTap SoundGame';
-    modalRef.componentInstance.imageUrl = '../../assets/Blog App.PNG';
+    modalRef.componentInstance.imageUrl = '../../assets/pata tap3.PNG';
+    modalRef.componentInstance.linkUrl = 'https://patatap-clonedavoucii.netlify.app/';
     modalRef.componentInstance.body = 'A sound game where you press any on your keyboard which produces nice sounds/bubbles flashes.';
+  }
+
+  openAntAdmin() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'AntCorp Admin Dashboard';
+    modalRef.componentInstance.imageUrl = '../../assets/Antcorp admin 3.PNG';
+    modalRef.componentInstance.linkUrl = 'https://admin-pan.antcorp.com.ng/';
+    modalRef.componentInstance.body = `An Admin Dashboard for monitoring antcorp website platform,
+                                      An admin can also perform all crud operation from this dashboard`;
+  }
+
+  openReactPortFolio() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'React Port-Folio';
+    modalRef.componentInstance.imageUrl = '../../assets/react.PNG';
+    modalRef.componentInstance.linkUrl = 'https://davoucii.netlify.com/';
+    modalRef.componentInstance.body = `My first port-folio page built with reactJs`;
+  }
+
+  openRgbGame() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'RGB Game';
+    modalRef.componentInstance.imageUrl = '../../assets/newnew.PNG';
+    modalRef.componentInstance.linkUrl = 'https://codepen.io/dav4thevid/full/YdqBNx';
+    modalRef.componentInstance.body = `This is an app that helps you master RGB color code`;
   }
 
   openRoyalOak() {
