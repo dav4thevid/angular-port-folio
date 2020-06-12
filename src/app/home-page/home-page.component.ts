@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faWindowRestore } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-page',
@@ -19,10 +19,10 @@ export class HomePageComponent implements OnInit {
 
 onWindowScroll(e) {
     let element = document.querySelector('.navbar');
-    if (window.pageYOffset > element.clientHeight)
-
+    // if (window.pageYOffset > element.clientHeight)
+    if (window.scrollY > 700)
     {
-  
+
       element.classList.add('navbar2');
     } else {
       element.classList.remove('navbar2');
