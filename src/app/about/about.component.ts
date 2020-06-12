@@ -36,8 +36,23 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
-  openModal() {
-    this.modalService.open(ModalComponent);
+  // openModal() {
+  //   this.modalService.open(ModalComponent);
+  //   modalRef.componentInstance.name = 'World';
+  // }
+
+  openAntCorp() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'Antcorp';
+    modalRef.componentInstance.imageUrl = '../../../assets/Antcorp 3.PNG';
+    modalRef.componentInstance.body = 'Antcorp is a financial expertise and cutting-edge technology that help groups, cooperatives, and communities achieve their goals by planning, saving and investing their money in a convenient, reliable and highly rewarding manner.';
+  }
+
+  openDiamond() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'DiamondBtc';
+    modalRef.componentInstance.imageUrl = '../../assets/diamond.PNG';
+    modalRef.componentInstance.body = 'Buying and Selling of bitcoin made easy';
   }
 
   showAllPage = true;

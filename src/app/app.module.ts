@@ -10,12 +10,14 @@ import { AboutComponent } from './about/about.component';
 
 import { ModalComponent } from './about/modal/modal.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     AboutComponent,
-    ModalComponent
+    ModalComponent,
+
   ],
   imports: [
     FontAwesomeModule,
