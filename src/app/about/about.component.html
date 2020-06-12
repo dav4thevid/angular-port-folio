@@ -341,7 +341,23 @@
     </div>
 
     <div class="row" *ngIf="showPageJavascript">
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showPageJavascript = true" (mouseleave)="showPageJavascript= false">
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0 align-items-stretch " (mouseenter) = "showPataTapApp = true" (mouseleave)="showPataTapApp = false">
+        <img
+          class="img-thumbnail img-fluid " *ngIf="!showPataTapApp"
+          src="../../assets/pata tap3.PNG"
+          alt="antcorp project"
+        />
+        <div *ngIf="showPataTapApp" >
+          <p class = "d-flex justify-content-center mt-4"
+            >PataTap SoundGame
+          </p>
+          <small class = "d-flex justify-content-center">Javascript </small>
+          <div class = "d-flex justify-content-center mt-3">
+            <button class = "btn btn-info ">More Info</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showPageJavascript = true" (mouseleave)="showPageJavascript= false">
         <img
           class="img-thumbnail img-fluid" *ngIf="!showPageJavascript"
           src="../../assets/pata tap3.PNG"
@@ -356,7 +372,7 @@
             <button class = "btn btn-info ">More Info</button>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "rgbGame = true" (mouseleave)="rgbGame = false">
         <img *ngIf = "!rgbGame"
