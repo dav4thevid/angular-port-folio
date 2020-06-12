@@ -269,7 +269,7 @@
           </p>
           <small class = "d-flex justify-content-center">Javascript </small>
           <div class = "d-flex justify-content-center mt-3">
-            <button class = "btn btn-info ">More Info</button>
+            <button class = "btn btn-info " (click)="openPataTap()">More Info</button>
           </div>
         </div>
       </div>
@@ -322,19 +322,22 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "antcorpUser= true" (mouseleave)="antcorpUser = false">
-        <img *ngIf="!antcorpUser"
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "royalOak= true" (mouseleave)="royalOak = false">
+        <img *ngIf="!royalOak"
           class="img-thumbnail"
-          src="../../assets/antcorp dash login.PNG"
+          src="../../assets//The Royal Oak.PNG"
           alt="antcorp project"
         />
-        <div *ngIf="antcorpUser" >
+        <div *ngIf="royalOak" >
           <p class = "d-flex justify-content-center mt-4"
-            >Antcorp User Dashboard
+            >The Royak Oak Hotel
           </p>
-          <small class = "d-flex justify-content-center">Angular / Django</small>
+          <small class = "d-flex justify-content-center">Html/CSS/Javascript</small>
           <div class = "d-flex justify-content-center mt-3">
-            <button class = "btn btn-info ">More Info</button>
+            <button class = "btn btn-info "(click)="openRoyalOak()">More Info</button>
+            <!-- <a href = "https://crownwell.github.io/index.html" target="_blank">
+              <button class = "btn btn-info ">More Info</button>
+            </a> -->
           </div>
         </div>
       </div>

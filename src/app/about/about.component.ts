@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
   antcorpAdmin: boolean;
   reactPortFolio: boolean;
   rgbGame: boolean;
-  antcorpUser: boolean;
+  royalOak: boolean;
 
   showAllPage = true;
   showPageJavascript = false;
@@ -48,7 +48,7 @@ export class AboutComponent implements OnInit {
     this.antcorpAdmin = false;
     this.reactPortFolio = false;
     this.rgbGame = false;
-    this.antcorpUser = false;
+    this.royalOak = false;
    }
 
   ngOnInit() {
@@ -58,6 +58,7 @@ export class AboutComponent implements OnInit {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'Antcorp';
     modalRef.componentInstance.imageUrl = '../../../assets/Antcorp 3.PNG';
+    modalRef.componentInstance.linkUrl = 'https://antcorp.com.ng';
     modalRef.componentInstance.body = `Antcorp is a financial expertise
                                        and cutting-edge technology that help groups, cooperatives,
                                        and communities achieve their goals by planning,
@@ -76,7 +77,9 @@ export class AboutComponent implements OnInit {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'YelpCamp';
     modalRef.componentInstance.imageUrl = '../../assets/YelpCamp.PNG';
-    modalRef.componentInstance.body = 'Diamond BTC is a campground website, where users can easy look for their favourite camp-site. and also comments on them.';
+    modalRef.componentInstance.body = `Diamond BTC is a campground website,
+                                       where users can easy look for their favourite camp-site
+                                       and also comments on them.`;
   }
 
   openBlogApp() {
@@ -84,6 +87,21 @@ export class AboutComponent implements OnInit {
     modalRef.componentInstance.title = 'BlogApp';
     modalRef.componentInstance.imageUrl = '../../assets/Blog App.PNG';
     modalRef.componentInstance.body = 'A Blog-App where discussion or information are been published regularly.';
+  }
+
+  openPataTap() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'PataTap SoundGame';
+    modalRef.componentInstance.imageUrl = '../../assets/Blog App.PNG';
+    modalRef.componentInstance.body = 'A sound game where you press any on your keyboard which produces nice sounds/bubbles flashes.';
+  }
+
+  openRoyalOak() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'The Royal Oak Hotel';
+    modalRef.componentInstance.imageUrl = '../../assets//The Royal Oak.PNG';
+    modalRef.componentInstance.linkUrl = 'https://crownwell.github.io/';
+    modalRef.componentInstance.body = 'A landing page for Royal Oak Hotel, where users check for rooms price and book online.';
   }
 
 

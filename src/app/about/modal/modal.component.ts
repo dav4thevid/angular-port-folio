@@ -15,14 +15,13 @@ import { Component, Input, OnInit } from '@angular/core';
       </div>
 
       <div class = "modal-image">
-
         <img class = "img-fluid img-responsive" [src] = "imageUrl">
       </div>
       <div class="modal-body">
         <p>{{body}}</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary">View Website</button>
+        <a [href] = "linkUrl" target = "_blank"><button type="button" class="btn btn-secondary">View Website</button></a>
       </div>
     </div>`
 ,
@@ -33,14 +32,15 @@ export class ModalComponent implements OnInit {
   @Input() title;
   @Input() body;
   @Input() imageUrl;
+  @Input() linkUrl;
 
-  constructor(private modalService: NgbModal, private activeModal : NgbActiveModal) { }
+  constructor(private modalService: NgbModal, private activeModal: NgbActiveModal) { }
 
   ngOnInit() {
   }
 
   dismissModal() {
-    this.modalService.dismissAll();
+    this.activeModal.dismiss();
   }
 
 }
