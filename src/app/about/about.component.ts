@@ -69,11 +69,22 @@ export class AboutComponent implements OnInit {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'DiamondBtc';
     modalRef.componentInstance.imageUrl = '../../assets/diamond.PNG';
-    modalRef.componentInstance.body = 'Buying and Selling of bitcoin made easy';
+    modalRef.componentInstance.body = 'Diamond BTC is a crytocurrency website that makes buying of bitcoin, etherium etc very easy.';
   }
 
+  openYelpCamp() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'YelpCamp';
+    modalRef.componentInstance.imageUrl = '../../assets/YelpCamp.PNG';
+    modalRef.componentInstance.body = 'Diamond BTC is a campground website, where users can easy look for their favourite camp-site. and also comments on them.';
+  }
 
-
+  openBlogApp() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'BlogApp';
+    modalRef.componentInstance.imageUrl = '../../assets/Blog App.PNG';
+    modalRef.componentInstance.body = 'A Blog-App where discussion or information are been published regularly.';
+  }
 
 
   setTools(tool) {

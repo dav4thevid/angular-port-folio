@@ -45,4 +45,3 @@ export class ModalComponent implements OnInit {
 
 }
 
-// Antcorp is a financial expertise and cutting-edge technology that help groups, cooperatives, and communities achieve their goals by planning, saving and investing their money in a convenient, reliable and highly rewarding manner.

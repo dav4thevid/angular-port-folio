@@ -237,7 +237,7 @@
           </p>
           <small class = "d-flex justify-content-center">NodeJs </small>
         <div class = "d-flex justify-content-center mt-3">
-          <button class = "btn btn-info ">More Info</button>
+          <button class = "btn btn-info " (click)="openYelpCamp()">More Info</button>
         </div>
         </div>
       </div>
@@ -249,11 +249,11 @@
         />
         <div *ngIf="showTextBlogApp" >
           <p class = "d-flex justify-content-center mt-4"
-            >Restfull Blog App
+            >Blog App
           </p>
           <small class = "d-flex justify-content-center">Javascript </small>
           <div class = "d-flex justify-content-center mt-3">
-            <button class = "btn btn-info ">More Info</button>
+            <button class = "btn btn-info " (click)="openBlogApp()">More Info</button>
           </div>
         </div>
       </div>
@@ -357,22 +357,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showPageJavascript = true" (mouseleave)="showPageJavascript= false">
-        <img
-          class="img-thumbnail img-fluid" *ngIf="!showPageJavascript"
-          src="../../assets/pata tap3.PNG"
-          alt="antcorp project"
-        />
-        <div *ngIf="showPageJavascript" >
-          <p class = "d-flex justify-content-center mt-4"
-            >PataTap SoundGame
-          </p>
-          <small class = "d-flex justify-content-center">Javascript </small>
-          <div class = "d-flex justify-content-center mt-3">
-            <button class = "btn btn-info ">More Info</button>
-          </div>
-        </div>
-      </div> -->
 
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "rgbGame = true" (mouseleave)="rgbGame = false">
         <img *ngIf = "!rgbGame"
