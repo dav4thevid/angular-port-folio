@@ -363,7 +363,7 @@
 
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "rgbGame = true" (mouseleave)="rgbGame = false">
         <img *ngIf = "!rgbGame"
-          class="img-thumbnail"
+          class="img-fluid"
           src="../../assets/newnew.PNG"
           alt="antcorp project"
         />
@@ -380,25 +380,28 @@
     </div>
 
     <div class="row" *ngIf="showPageAngular" >
-      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "antcorpUser = true" (mouseleave)="antcorpUser = false">
-        <img *ngIf = "!antcorpUser"
-          class="img-thumbnail"
-          src="../../assets/antcorp dash login.PNG"
+      <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "royalOak= true" (mouseleave)="royalOak = false">
+        <img *ngIf="!royalOak"
+          class="img-fluid"
+          src="../../assets//The Royal Oak.PNG"
           alt="antcorp project"
         />
-        <div *ngIf="antcorpUser" >
+        <div *ngIf="royalOak" >
           <p class = "d-flex justify-content-center mt-4"
-            >Antcorp User Dashboard
+            >The Royak Oak Hotel
           </p>
-          <small class = "d-flex justify-content-center">Angular / Django</small>
+          <small class = "d-flex justify-content-center">Html/CSS/Javascript</small>
           <div class = "d-flex justify-content-center mt-3">
-            <button class = "btn btn-info ">More Info</button>
+            <button class = "btn btn-info "(click)="openRoyalOak()">More Info</button>
+            <!-- <a href = "https://crownwell.github.io/index.html" target="_blank">
+              <button class = "btn btn-info ">More Info</button>
+            </a> -->
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "antcorpAdmin = true" (mouseleave)="antcorpAdmin = false">
         <img *ngIf = "!antcorpAdmin"
-          class="img-thumbnail"
+          class="img-fluid"
           src="../../assets/Antcorp admin 3.PNG"
           alt="antcorp project"
         />
@@ -414,7 +417,7 @@
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showTextDiamond = true" (mouseleave)="showTextDiamond = false">
         <img *ngIf="!showTextDiamond"
-          class="img-thumbnail img-fluid"
+          class="img-fluid"
           src="../../assets/diamond.PNG"
           alt="antcorp project"
         />
@@ -433,7 +436,7 @@
     <div class="row" *ngIf="showPageNode">
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "showTextBlogApp = true" (mouseleave)="showTextBlogApp = false">
         <img
-          class="img-thumbnail img-fluid" *ngIf = "!showTextBlogApp"
+          class="img-fluid" *ngIf = "!showTextBlogApp"
           src="../../assets/Blog App.PNG"
           alt="antcorp project"
         />
@@ -449,7 +452,7 @@
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter)="showTextYelpCamp = true" (mouseleave)="showTextYelpCamp = false">
         <img *ngIf="!showTextYelpCamp"
-          class="img-thumbnail img-fluid"
+          class="img-fluid"
           src="../../assets/YelpCamp.PNG"
           alt="antcorp project"
         />
@@ -469,7 +472,7 @@
       <div class="row" *ngIf="showPageReact">
           <div class="col-12 col-sm-6 col-md-4 m-0 p-0" (mouseenter) = "reactPortFolio = true" (mouseleave)="reactPortFolio = false">
         <img *ngIf = "!reactPortFolio"
-          class="img-thumbnail"
+          class="img-fluid"
           src="../../assets/react.PNG"
           alt="antcorp project"
         />
@@ -501,7 +504,7 @@
       <div class="row">
         <div class="col-sm-6 col-md-3">
           <img
-            class="img-thumbnail"
+            class="img-fluid"
             src="../../assets/Capture.PNG"
             alt="Card image cap"
           />
@@ -516,7 +519,7 @@
 
         <div class="col-sm-6 col-md-3">
           <img
-            class="img-thumbnail"
+            class="img-fluid"
             src="../../assets/Capture.PNG"
             alt="Card image cap"
           />
@@ -531,7 +534,7 @@
 
         <div class="col-sm-6 col-md-3">
           <img
-            class="img-thumbnail"
+            class="img-fluid"
             src="../../assets/Capture.PNG"
             alt="Card image cap"
           />
@@ -546,7 +549,7 @@
 
         <div class="col-sm-6 col-md-3">
           <img
-            class="img-thumbnail"
+            class="img-fluid"
             src="../../assets/Capture.PNG"
             alt="Card image cap"
           />
