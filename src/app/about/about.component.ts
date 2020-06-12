@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
   showTextDiamond: boolean;
   showTextYelpCamp: boolean;
   showTextBlogApp: boolean;
-  showPataApp: boolean;
+  showPataTapApp: boolean;
   antcorpAdmin: boolean;
   reactPortFolio: boolean;
   rgbGame: boolean;
@@ -44,7 +44,7 @@ export class AboutComponent implements OnInit {
     this.showTextDiamond = false;
     this.showTextYelpCamp = false;
     this.showTextBlogApp = false;
-    this.showPataApp = false;
+    this.showPataTapApp = false;
     this.antcorpAdmin = false;
     this.reactPortFolio = false;
     this.rgbGame = false;
