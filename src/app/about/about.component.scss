@@ -47,14 +47,26 @@ ul li a.active {
   transition: background-color 0.7s ;
 }
 
+@media only screen and (max-width: 600px) {
+  .projects-lists-header {
+    // display: none;
+    font-size: 10px ;
+    margin: 2px 2px 2px 2px;
+
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .projects-lists-header {
+    display: none;
+  }
+}
+
+
 a{
   font-weight: bolder;
 }
 
-// .img-fluid {
-//   max-width:300px;
-//   height:auto
-// }
 
 .icons {
   width:75px;
