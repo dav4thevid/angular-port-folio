@@ -1,4 +1,4 @@
-<nav  class="navbar navbar-fixed navbar-expand-md sticky-top" (scroll)="onWindowScroll($event);">
+<!-- <nav  class="navbar navbar-fixed navbar-expand-md sticky-top" (scroll)="onWindowScroll($event);">
   <a class="navbar-brand" href="#">
     <img class="navbar-brand" src="../../assets/20-512.png" alt="logo">
   </a>
@@ -26,17 +26,54 @@
       </li>
     </ul>
   </div>
+</nav> -->
+
+<nav class="navbar navbar-fixed navbar-expand-md navbar-light bg-light " (scroll)="onWindowScroll($event);">
+  <a class="navbar-brand" href="#">
+    <img class="navbar-brand" src="../../assets/20-512.png" alt="logo">
+  </a>
+<div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <span class="navbar-toggler-icon">
+      <i class="fa fa-bars" style="color:rgb(145, 139, 139); font-size:30px;"></i>
+  </span>
+  </button>
+</div>
+
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link mr-4" href="# ">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link mr-4" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mr-4" href="#">Projects</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link mr-4" href="#">Blogs</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link mr-4" href="#">Contact me</a>
+      </li>
+    </ul>
+  </div>
 </nav>
+
+
 
 <section>
   <div class="container-fluid">
     <div class = "row">
       <div class = "col-12 col-sm-12 col-md-12 homepage-text">
         <p class = "d-flex justify-content-center" >Hello. I'm <span class = "ml-2 highlight "> Dave Davoucii </span></p>
-        <p class = "d-flex justify-content-center">I'm a <span class = "ml-2 mr-2 highlight">Mobile | Web</span> Developer
+        <p class = "d-flex justify-content-center">I'm a <span class = "ml-2 mr-2 highlight"> Web | Mobile</span> Developer
         </p>
         <div class = "d-flex justify-content-center">
-          <button type="button" class="btn btn-lg btn-outline-light">View My Projects</button>
+          <button type="button" class="btn btn-md btn-outline-light"> View My Projects <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
           <!-- <favicon [icon]="faArrowRight"></favicon> -->
         </div>
       </div>
