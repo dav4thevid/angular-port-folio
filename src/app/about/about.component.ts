@@ -70,7 +70,7 @@ export class AboutComponent implements OnInit {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'DiamondBtc';
     modalRef.componentInstance.imageUrl = '../../assets/diamond.PNG';
-    modalRef.componentInstance.body = 'Diamond BTC is a crytocurrency website that makes buying of bitcoin, etherium etc very easy.';
+    modalRef.componentInstance.body = 'Diamond BTC is a crytocurrency website that makes buying and selling of bitcoin, etherium etc very easy.';
   }
 
   openYelpCamp() {
