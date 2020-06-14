@@ -70,6 +70,7 @@ export class AboutComponent implements OnInit {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'DiamondBtc';
     modalRef.componentInstance.imageUrl = '../../assets/diamond.PNG';
+    modalRef.componentInstance.linkUrl = 'https://diamondbtc.services';
     modalRef.componentInstance.body = 'Diamond BTC is a crytocurrency website that makes buying and selling of bitcoin, etherium etc very easy.';
   }
 
@@ -77,6 +78,7 @@ export class AboutComponent implements OnInit {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'YelpCamp';
     modalRef.componentInstance.imageUrl = '../../assets/YelpCamp.PNG';
+    modalRef.componentInstance.linkUrl = 'https://floating-sands-38542.herokuapp.com/';
     modalRef.componentInstance.body = `Diamond BTC is a campground website,
                                        where users can easy look for their favourite camp-site
                                        and also comments on them.`;
