@@ -88,6 +88,7 @@ export class AboutComponent implements OnInit {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'BlogApp';
     modalRef.componentInstance.imageUrl = '../../assets/Blog App.PNG';
+    modalRef.componentInstance.linkUrl = 'https://pacific-shelf-39954.herokuapp.com/blogs';
     modalRef.componentInstance.body = 'A Blog-App where discussion or information are been published regularly.';
   }
 
