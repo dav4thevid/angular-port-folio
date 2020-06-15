@@ -12,6 +12,7 @@ import { ModalComponent } from './about/modal/modal.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FooterComponent } from './footer/footer.component';
     BlogsComponent,
     ContactMeComponent,
     FooterComponent,
+    NavbarComponent,
 
   ],
   imports: [
