@@ -1,48 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap");
 
 
-.navbar-fixed {
-  top: 0;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-}
-.navbar{
-  background-color: transparent !important;
-  transition: background-color 0.7s ease-in-out;
-}
-.navbar3 {
-  background: none!important;
-}
-
-.navbar2 {
-  background-color: #464646 !important;
-  transition: background-color 0.7s ease-in-out;
-  // background: none;
-}
-
-
-#navbar-button{
-  color:#fff !important;
-}
-
-.nav-link  {
-  color:#fff !important;
-  font-family: 'Raleway', sans-serif !important;
-  font-weight: bolder !important;
-}
-
-.navbar-brand {
-  position: relative;
-  width: 40px;
-  margin-right: 50px;
-  left: 15px;
-  background-size: contain;
-  padding:0em;
-
-
-}
-
 .container-fluid {
   /* Location of the image */
   background-image: url(../../assets/download.png);
@@ -89,6 +47,7 @@ button .btn .btn-lg {
   border-radius: 0em;
 }
 
+
 @media only screen and (max-width: 900px) {
   .homepage-text {
     font-size: 2em;
@@ -107,11 +66,11 @@ button .btn .btn-lg {
 //   }
 // }
 
-.highlight {
-  color: #e31b6d;
-}
+// .highlight {
+//   color: #e31b6d;
+// }
 
-button {
-  margin-left: auto;
-  margin-right: auto;
-}
+// button {
+//   margin-left: auto;
+//   margin-right: auto;
+// }

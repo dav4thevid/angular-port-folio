@@ -97,12 +97,27 @@
 //   margin-right: auto;
 // }
 
-ul li {
-  margin: 0 0 3em 0;
-  padding: 0;
+// ul li {
+//   list-style: none;
+//   cursor: pointer;
+
+// }
+
+.projects-headers {
   list-style: none;
+  margin-bottom: 30px;
   float: left;
   cursor: pointer;
+  transition: left 0.5s ease-in-out;
+}
+
+ul li a {
+  color: #000;
+  display: block;
+  position: relative;
+  line-height: 32px;
+  padding: 0 25px 0 25px;
+  white-space: nowrap;
   transition: left 0.5s ease-in-out;
 }
 
@@ -116,15 +131,15 @@ h5  {
 
 
 
-ul li a {
-  color: #000;
-  display: block;
-  position: relative;
-  line-height: 32px;
-  padding: 0 25px 0 25px;
-  white-space: nowrap;
-  // transition: left 0.5s ease-in-out;
-}
+// ul li a {
+//   color: #000;
+//   display: block;
+//   position: relative;
+//   line-height: 32px;
+//   padding: 0 25px 0 25px;
+//   white-space: nowrap;
+//   // transition: left 0.5s ease-in-out;
+// }
 
 .image{
   height:auto;
@@ -136,7 +151,7 @@ ul li a {
   object-position:50% 50%;
 }
 
-ul li a.active {
+.projects-headers a.active {
   background-color: rgb(207, 69, 69);
   color: #ffff;
   font-weight: bolder;
@@ -287,8 +302,8 @@ section {
 
 textarea, input
 {
-    background: #1e242c;
-    border: 0;
+    background: #1e242c !important;
+    border: 0 !important;
 }
 
  textarea:focus, input:focus{
@@ -333,7 +348,7 @@ button:hover{
   font-family: "Open Sans";
 }
 
-i{
+.footer-icon{
     background-color: #262f38;
     cursor: pointer;
     font-size: 18pt;
@@ -347,7 +362,7 @@ i{
     color:white;
 }
 
-i:hover{
+.footer-icon:hover{
   background-color:#5bc0de;
   transition: background-color 0.5s;
 }

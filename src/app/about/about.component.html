@@ -184,8 +184,8 @@
     </div>
     <div class="row">
       <div class="col-12 col-sm-12 col-md-12 text-header d-flex justify-content-center">
-        <ul>
-          <li class = "projects-lists-header" *ngFor="let tool of tools" (click)="setTools(tool)">
+        <ul >
+          <li class = "projects-lists-header projects-headers" *ngFor="let tool of tools" (click)="setTools(tool)">
             <a [class.active]="tool === activeTool">{{ tool }}</a>
           </li>
         </ul>
