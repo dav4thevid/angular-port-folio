@@ -14,6 +14,7 @@ export class AboutComponent implements OnInit {
   showTextYelpCamp: boolean;
   showTextBlogApp: boolean;
   showPataTapApp: boolean;
+  showCovid: boolean;
   antcorpAdmin: boolean;
   reactPortFolio: boolean;
   rgbGame: boolean;
@@ -45,6 +46,7 @@ export class AboutComponent implements OnInit {
     this.showTextYelpCamp = false;
     this.showTextBlogApp = false;
     this.showPataTapApp = false;
+    this.showCovid = false;
     this.antcorpAdmin = false;
     this.reactPortFolio = false;
     this.rgbGame = false;
@@ -90,6 +92,14 @@ export class AboutComponent implements OnInit {
     modalRef.componentInstance.imageUrl = '../../assets/Blog App.PNG';
     modalRef.componentInstance.linkUrl = 'https://pacific-shelf-39954.herokuapp.com/blogs';
     modalRef.componentInstance.body = 'A Blog-App where discussion or information are been published regularly.';
+  }
+
+  openCovidLiveUpdate() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'Covid Live Updade';
+    modalRef.componentInstance.imageUrl = '../../assets/covidliveupdate.PNG';
+    modalRef.componentInstance.linkUrl = 'https://covidliveupdate.netlify.app/';
+    modalRef.componentInstance.body = 'A website that gives users live update of worldwide cases of covid19 aka corona virus.';
   }
 
   openPataTap() {
