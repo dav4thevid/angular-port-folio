@@ -98,7 +98,7 @@ export class AboutComponent implements OnInit {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'Covid Live Updade';
     modalRef.componentInstance.imageUrl = '../../assets/covidliveupdate.PNG';
-    modalRef.componentInstance.linkUrl = 'https://covidliveupdate.netlify.app/';
+    modalRef.componentInstance.linkUrl = 'https://covidliveupdates.netlify.app/';
     modalRef.componentInstance.body = 'A website that gives users live update of worldwide cases of covid19 aka corona virus.';
   }
 
