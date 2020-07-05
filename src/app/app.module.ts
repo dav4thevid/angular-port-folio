@@ -8,8 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutComponent } from './about/about.component';
-
 import { NavbarComponent } from './navbar/navbar.component';
+
 import { ModalComponent } from './about/modal/modal.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
