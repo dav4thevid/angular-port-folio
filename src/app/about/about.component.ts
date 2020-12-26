@@ -105,12 +105,28 @@ export class AboutComponent implements OnInit {
     modalRef.componentInstance.body = 'A website that gives users live update of worldwide cases of covid19 aka corona virus.';
   }
 
-  openPataTap() {
+  openDexter() {
     const modalRef = this.modalService.open(ModalComponent);
-    modalRef.componentInstance.title = 'PataTap SoundGame';
-    modalRef.componentInstance.imageUrl = '../../assets/pata tap3.PNG';
-    modalRef.componentInstance.linkUrl = 'https://patatap-clonedavoucii.netlify.app/';
-    modalRef.componentInstance.body = 'A sound game where you press any on your keyboard which produces nice sounds/bubbles flashes.';
+    modalRef.componentInstance.title = 'Dexter';
+    modalRef.componentInstance.imageUrl = '../../assets/dexter.jpg';
+    modalRef.componentInstance.linkUrl = '#';
+    modalRef.componentInstance.body = 'A platform for learning, its has thousands of courses which users can enroll on at a very cheap price';
+  }
+
+  openSkillConnect() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'Skill Connect';
+    modalRef.componentInstance.imageUrl = '../../assets/skill-connect.jpg';
+    modalRef.componentInstance.linkUrl = '#';
+    modalRef.componentInstance.body = 'A mobile platform for skilled and talented people who are willing to monetize their skills; to work and earn money by providing professional services to its customers on demand.';
+  }
+
+  openHookie() {
+    const modalRef = this.modalService.open(ModalComponent);
+    modalRef.componentInstance.title = 'Hookie';
+    modalRef.componentInstance.imageUrl = '../../assets/hookie (1).jpg';
+    modalRef.componentInstance.linkUrl = '#';
+    modalRef.componentInstance.body = 'A Dating App for connecting people, Its has live chat, news feeds and its totally free';
   }
 
   openAntAdmin() {
