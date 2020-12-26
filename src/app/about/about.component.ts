@@ -13,15 +13,16 @@ export class AboutComponent implements OnInit {
   showTextDiamond: boolean;
   showTextYelpCamp: boolean;
   showTextBlogApp: boolean;
-  showPataTapApp: boolean;
+  showDexter: boolean;
+  showskillconnect: boolean;
   showCovid: boolean;
   antcorpAdmin: boolean;
   reactPortFolio: boolean;
-  rgbGame: boolean;
+  hookie: boolean;
   royalOak: boolean;
 
   showAllPage = true;
-  showPageJavascript = false;
+  showFlutterFirebase = false;
   showPageAngular = false;
   showPageNode = false;
   showPageReact = false;
@@ -46,11 +47,12 @@ export class AboutComponent implements OnInit {
     this.showTextDiamond = false;
     this.showTextYelpCamp = false;
     this.showTextBlogApp = false;
-    this.showPataTapApp = false;
+    this.showDexter = false;
+    this.showskillconnect = false;
     this.showCovid = false;
     this.antcorpAdmin = false;
     this.reactPortFolio = false;
-    this.rgbGame = false;
+    this.hookie = false;
     this.royalOak = false;
    }
 
@@ -128,7 +130,7 @@ export class AboutComponent implements OnInit {
     modalRef.componentInstance.body = `My first port-folio page built with reactJs`;
   }
 
-  openRgbGame() {
+  openhookie() {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'RGB Game';
     modalRef.componentInstance.imageUrl = '../../assets/newnew.PNG';
@@ -150,32 +152,32 @@ export class AboutComponent implements OnInit {
     console.log(tool);
     if (tool === 'ALL') {
       this.showAllPage = true;
-      this.showPageJavascript = false;
+      this.showFlutterFirebase = false;
       this.showPageNode = false;
       this.showPageReact = false;
       this.showPageAngular = false;
     } else if ( tool === 'FLUTTER/FIREBASE') {
-      this.showPageJavascript = true;
+      this.showFlutterFirebase = true;
       this.showPageNode = false;
       this.showAllPage = false;
       this.showPageReact = false;
       this.showPageAngular = false;
     } else if (tool === 'NODE') {
       this.showPageNode = true;
-      this.showPageJavascript = false;
+      this.showFlutterFirebase = false;
       this.showAllPage = false;
       this.showPageReact = false;
       this.showPageAngular = false;
     } else if (tool === 'ANGULAR') {
       this.showPageAngular = true;
       this.showAllPage = false;
-      this.showPageJavascript = false;
+      this.showFlutterFirebase = false;
       this.showPageNode = false;
       this.showPageReact = false;
     } else if (tool === 'REACT') {
       this.showPageReact = true;
       this.showPageAngular = false;
-      this.showPageJavascript = false;
+      this.showFlutterFirebase = false;
       this.showAllPage = false;
       this.showPageNode = false;
     }

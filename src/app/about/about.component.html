@@ -80,51 +80,54 @@
         <div class="col-sm-12 col-md-6 tools">
           <div class="text-header">
             <h2 class="headers mb-5">TOOLS</h2>
-            <div class = "row ml-3">
-              <div class ="col-xs-12 col-sm-6 col-md-4">
-                  <img src="../../assets/flutter.png" width = "130" height="auto">
+            <div class="row ml-3">
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <img src="../../assets/flutter.png" width="130" height="auto" />
               </div>
-              <div class ="col-xs-12 col-sm-6 col-md-4">
-                  <img src="../../assets/angular.png" width = "130" height="auto">
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <img src="../../assets/angular.png" width="130" height="auto" />
               </div>
 
-              <div class ="col-xs-12 col-sm-6 col-md-4">
-                <img src="../../assets/reactlogo.png" width = "130" height="auto">
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <img
+                  src="../../assets/reactlogo.png"
+                  width="130"
+                  height="auto"
+                />
+              </div>
+
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <img src="../../assets/git.png" width="130" height="auto" />
+              </div>
+
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <img src="../../assets/github.png" width="130" height="auto" />
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <img src="../../assets/dart.png" width="130" height="auto" />
+              </div>
+
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <img src="../../assets/JS.png" width="110" height="auto" />
+              </div>
+
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <img
+                  src="../../assets/firebase.png"
+                  width="130"
+                  height="auto"
+                />
+              </div>
+
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <img
+                  src="../../assets/TypeScript.jpg"
+                  width="110"
+                  height="auto"
+                />
+              </div>
             </div>
-
-            <div class ="col-xs-6 col-sm-6 col-md-4">
-              <img src="../../assets/git.png" width = "130" height="auto">
-            </div>
-
-            <div class ="col-xs-6 col-sm-6 col-md-4">
-              <img src="../../assets/github.png" width = "130" height="auto">
           </div>
-          <div class ="col-xs-6 col-sm-6 col-md-4">
-              <img src="../../assets/dart.png" width = "130" height="auto">
-          </div>
-
-          <div class ="col-xs-6 col-sm-6 col-md-4">
-            <img src="../../assets/JS.png" width = "110" height="auto">
-          </div>
-
-          <div class ="col-xs-6 col-sm-6 col-md-4">
-            <img src="../../assets/firebase.png" width = "130" height="auto">
-          </div>
-
-          <div class ="col-xs-6 col-sm-6 col-md-4">
-            <img src="../../assets/TypeScript.jpg" width = "110" height="auto">
-          </div>
-
-
-            </div>
-
-
-            <div class = "row ml-4">
-
-
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -135,9 +138,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex justify-content-center p-5">
-        <h1 class="headers mb-4">
-          PROJECTS
-        </h1>
+        <h1 class="headers mb-4">PROJECTS</h1>
       </div>
     </div>
     <div class="row">
@@ -310,19 +311,19 @@
           </div>
         </div>
       </div>
-      <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
-        (mouseenter)="rgbGame = true"
-        (mouseleave)="rgbGame = false"
+      <!-- <div
+        class="col-12 col-sm-6 col-md-4"
+        (mouseenter)="hookie = true"
+        (mouseleave)="hookie = false"
       >
         <img
-          *ngIf="!rgbGame"
+          *ngIf="!hookie"
           class="img-fluid"
           src="../../assets/newnew.PNG"
           alt="antcorp project"
         />
-        <div *ngIf="rgbGame">
-          <p class="d-flex justify-content-center mt-4">Rgb Game</p>
+        <div *ngIf="hookie">
+          <p class="d-flex justify-content-center mt-4">Hookie</p>
           <small class="d-flex justify-content-center">Javascript</small>
           <div class="d-flex justify-content-center mt-3">
             <button class="btn btn-info" (click)="openRgbGame()">
@@ -330,7 +331,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> -->
       <div
         class="col-12 col-sm-6 col-md-4 m-0 p-0"
         (mouseenter)="royalOak = true"
@@ -359,21 +360,23 @@
       </div>
     </div>
 
-    <div class="row" *ngIf="showPageJavascript">
+    <div class="row " *ngIf="showFlutterFirebase ">
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0 align-items-stretch"
-        (mouseenter)="showPataTapApp = true"
-        (mouseleave)="showPataTapApp = false"
+        class="col-xs-12 col-sm-6 col-md-4 d-flex justify-content-center"
+        (mouseenter)="showDexter = true"
+        (mouseleave)="showDexter = false"
       >
         <img
           class="img-fluid"
-          *ngIf="!showPataTapApp"
-          src="../../assets/pata tap3.PNG"
+          *ngIf="!showDexter"
+          src="../../assets/dexter2.jpg"
           alt="antcorp project"
+          width = "230"
+
         />
-        <div *ngIf="showPataTapApp">
-          <p class="d-flex justify-content-center mt-4">PataTap SoundGame</p>
-          <small class="d-flex justify-content-center">Javascript </small>
+        <div *ngIf="showDexter">
+          <p class="d-flex justify-content-center mt-4">Dexter</p>
+          <small class="d-flex justify-content-center">Flutter</small>
           <div class="d-flex justify-content-center mt-3">
             <button class="btn btn-info" (click)="openPataTap()">
               More Info
@@ -383,43 +386,45 @@
       </div>
 
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
-        (mouseenter)="royalOak = true"
-        (mouseleave)="royalOak = false"
-      >
-        <img
-          *ngIf="!royalOak"
-          class="img-fluid"
-          src="../../assets//The Royal Oak.PNG"
-          alt="antcorp project"
-        />
-        <div *ngIf="royalOak">
-          <p class="d-flex justify-content-center mt-4">The Royak Oak Hotel</p>
-          <small class="d-flex justify-content-center"
-            >Html/CSS/Javascript</small
-          >
-          <div class="d-flex justify-content-center mt-3">
-            <button class="btn btn-info" (click)="openRoyalOak()">
-              More Info
-            </button>
-          </div>
+      class="col-12 col-sm-6 col-md-4 d-flex justify-content-center"
+      (mouseenter)="showskillconnect = true"
+      (mouseleave)="showskillconnect = false"
+    >
+      <img
+        class="img-fluid"
+        *ngIf="!showskillconnect"
+        src="../../assets/skill-connect2.jpg"
+        alt="antcorp project"
+        width = "230"
+          height="auto"
+      />
+      <div *ngIf="showskillconnect">
+        <p class="d-flex justify-content-center mt-4">Skill Connect</p>
+        <small class="d-flex justify-content-center">Flutter/Firebase</small>
+        <div class="d-flex justify-content-center mt-3">
+          <button class="btn btn-info" (click)="openPataTap()">
+            More Info
+          </button>
         </div>
       </div>
+    </div>
 
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
-        (mouseenter)="rgbGame = true"
-        (mouseleave)="rgbGame = false"
+        class="col-12 col-sm-6 col-md-4 d-flex justify-content-center"
+        (mouseenter)="hookie = true"
+        (mouseleave)="hookie = false"
       >
         <img
-          *ngIf="!rgbGame"
+          *ngIf="!hookie"
           class="img-fluid"
-          src="../../assets/newnew.PNG"
+          src="../../assets/hookie (1).jpg"
           alt="antcorp project"
+          width = "230"
+          height="auto"
         />
-        <div *ngIf="rgbGame">
-          <p class="d-flex justify-content-center mt-4">Rgb Game</p>
-          <small class="d-flex justify-content-center">Javascript</small>
+        <div *ngIf="hookie">
+          <p class="d-flex justify-content-center mt-4">Hookie</p>
+          <small class="d-flex justify-content-center">Flutter/Firebase</small>
           <div class="d-flex justify-content-center mt-3">
             <button class="btn btn-info" (click)="openRgbGame()">
               More Info
@@ -551,7 +556,6 @@
         (mouseenter)="reactPortFolio = true"
         (mouseleave)="reactPortFolio = false"
       >
-
         <img
           *ngIf="!reactPortFolio"
           class="img-fluid"
@@ -571,26 +575,53 @@
         </div>
       </div>
       <div
-      class="col-12 col-sm-6 col-md-4 m-0 p-0 align-items-stretch"
-      (mouseenter)="showCovid = true"
-      (mouseleave)="showCovid = false"
-    >
-      <img
-        class="img-fluid"
-        *ngIf="!showCovid"
-        src="../../assets/covidliveupdate.PNG"
-        alt="antcorp project"
-      />
-      <div *ngIf="showCovid">
-        <p class="d-flex justify-content-center mt-4">Covid Live Update</p>
-        <small class="d-flex justify-content-center">React </small>
-        <div class="d-flex justify-content-center mt-3">
-          <button class="btn btn-info" (click)="openCovidLiveUpdate()">
-            More Info
-          </button>
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 align-items-stretch"
+        (mouseenter)="showCovid = true"
+        (mouseleave)="showCovid = false"
+      >
+        <img
+          class="img-fluid"
+          *ngIf="!showCovid"
+          src="../../assets/covidliveupdate.PNG"
+          alt="antcorp project"
+        />
+        <div *ngIf="showCovid">
+          <p class="d-flex justify-content-center mt-4">Covid Live Update</p>
+          <small class="d-flex justify-content-center">React </small>
+          <div class="d-flex justify-content-center mt-3">
+            <button class="btn btn-info" (click)="openCovidLiveUpdate()">
+              More Info
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+
+        <div
+        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        (mouseenter)="royalOak = true"
+        (mouseleave)="royalOak = false"
+      >
+        <img
+          *ngIf="!royalOak"
+          class="img-fluid"
+          src="../../assets//The Royal Oak.PNG"
+          alt="antcorp project"
+        />
+        <div *ngIf="royalOak">
+          <p class="d-flex justify-content-center mt-4">The Royak Oak Hotel</p>
+          <small class="d-flex justify-content-center"
+            >Html/CSS/Javascript</small
+          >
+          <div class="d-flex justify-content-center mt-3">
+            <button class="btn btn-info" (click)="openRoyalOak()">
+              More Info
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
   </div>
 </section>
