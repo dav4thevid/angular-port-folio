@@ -31,8 +31,9 @@ export class AboutComponent implements OnInit {
 
   tools = [
     'ALL',
-    'VANNILA JS',
-    'NODE',
+    // 'VANNILA JS',
+    'FLUTTER/FIREBASE',
+    // 'NODE',
     'ANGULAR',
     'REACT',
   ];
@@ -153,7 +154,7 @@ export class AboutComponent implements OnInit {
       this.showPageNode = false;
       this.showPageReact = false;
       this.showPageAngular = false;
-    } else if ( tool === 'VANNILA JS') {
+    } else if ( tool === 'FLUTTER/FIREBASE') {
       this.showPageJavascript = true;
       this.showPageNode = false;
       this.showAllPage = false;
