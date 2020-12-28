@@ -158,12 +158,14 @@
     </div>
     <div class="row" *ngIf="showAllPage">
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0  animate__animated"
         (mouseenter)="showTextAntcorp = true"
         (mouseleave)="showTextAntcorp = false"
+        animateOnScroll animationName="animate__fadeInTopLeft"
       >
         <img
           *ngIf="!showTextAntcorp"
+
           class="img-fluid"
           src="../../assets/Antcorp 3.PNG"
           alt="antcorp project"
@@ -181,9 +183,10 @@
         </div>
       </div>
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated"
         (mouseenter)="showTextDiamond = true"
         (mouseleave)="showTextDiamond = false"
+        animateOnScroll animationName="animate__fadeInDownBig"
       >
         <img
           *ngIf="!showTextDiamond"
@@ -202,9 +205,10 @@
         </div>
       </div>
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated"
         (mouseenter)="showTextYelpCamp = true"
         (mouseleave)="showTextYelpCamp = false"
+        animateOnScroll animationName="animate__fadeInTopRight"
       >
         <img
           *ngIf="!showTextYelpCamp"
@@ -223,9 +227,10 @@
         </div>
       </div>
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated"
         (mouseenter)="showTextBlogApp = true"
         (mouseleave)="showTextBlogApp = false"
+        animateOnScroll animationName="animate__fadeInLeftBig"
       >
         <img
           class="img-fluid"
@@ -244,9 +249,10 @@
         </div>
       </div>
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0 align-items-stretch"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 align-items-stretch animate__animated"
         (mouseenter)="showCovid = true"
         (mouseleave)="showCovid = false"
+        animateOnScroll animationName="animate__fadeInDown"
       >
         <img
           class="img-fluid"
@@ -265,9 +271,10 @@
         </div>
       </div>
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated"
         (mouseenter)="antcorpAdmin = true"
         (mouseleave)="antcorpAdmin = false"
+        animateOnScroll animationName="animate__fadeInRightBig"
       >
         <img
           *ngIf="!antcorpAdmin"
@@ -289,9 +296,10 @@
       </div>
 
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated"
         (mouseenter)="reactPortFolio = true"
         (mouseleave)="reactPortFolio = false"
+        animateOnScroll animationName="animate__fadeInBottomLeft"
       >
         <img
           *ngIf="!reactPortFolio"
@@ -312,9 +320,10 @@
         </div>
       </div>
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated"
         (mouseenter)="royalOak = true"
         (mouseleave)="royalOak = false"
+        animateOnScroll animationName="animate__fadeInDown"
       >
         <img
           *ngIf="!royalOak"
