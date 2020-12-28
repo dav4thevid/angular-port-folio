@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
     NavbarComponent,
 
+
   ],
   imports: [
     FontAwesomeModule,
@@ -36,6 +38,7 @@ import { FooterComponent } from './footer/footer.component';
     NgbModule,
     BrowserModule,
     AppRoutingModule,
+    AnimateOnScrollModule.forRoot()
 
   ],
   providers: [],
