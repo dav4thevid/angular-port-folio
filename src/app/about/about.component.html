@@ -350,7 +350,8 @@
 
     <div class="row " *ngIf="showFlutterFirebase ">
       <div
-        class="col-xs-12 col-sm-6 col-md-4 d-flex justify-content-center"
+        class="col-xs-12 col-sm-6 col-md-4 d-flex justify-content-center animate__animated"
+        animateOnScroll animationName="animate__fadeInLeftBig"
         (mouseenter)="showDexter = true"
         (mouseleave)="showDexter = false"
       >
@@ -374,7 +375,7 @@
       </div>
 
       <div
-      class="col-12 col-sm-6 col-md-4 d-flex justify-content-center"
+      class="col-12 col-sm-6 col-md-4 d-flex justify-content-center animate__animated" animateOnScroll animationName="animate__fadeInUp"
       (mouseenter)="showskillconnect = true"
       (mouseleave)="showskillconnect = false"
     >
@@ -398,7 +399,7 @@
     </div>
 
       <div
-        class="col-12 col-sm-6 col-md-4 d-flex justify-content-center"
+        class="col-12 col-sm-6 col-md-4 d-flex justify-content-center animate__animated" animateOnScroll animationName="animate__fadeInRightBig"
         (mouseenter)="hookie = true"
         (mouseleave)="hookie = false"
       >
@@ -424,9 +425,11 @@
 
     <div class="row" *ngIf="showPageAngular">
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated"
+        animateOnScroll animationName="animate__fadeInLeftBig"
         (mouseenter)="showTextAntcorp = true"
         (mouseleave)="showTextAntcorp = false"
+
       >
         <img
           *ngIf="!showTextAntcorp"
@@ -448,7 +451,7 @@
       </div>
 
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated" animateOnScroll animationName="animate__fadeInUp"
         (mouseenter)="antcorpAdmin = true"
         (mouseleave)="antcorpAdmin = false"
       >
@@ -471,7 +474,7 @@
         </div>
       </div>
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated" animateOnScroll animationName="animate__fadeInRightBig"
         (mouseenter)="showTextDiamond = true"
         (mouseleave)="showTextDiamond = false"
       >
@@ -493,7 +496,7 @@
       </div>
     </div>
 
-    <div class="row" *ngIf="showPageNode">
+    <!-- <div class="row" *ngIf="showPageNode">
       <div
         class="col-12 col-sm-6 col-md-4 m-0 p-0"
         (mouseenter)="showTextBlogApp = true"
@@ -536,11 +539,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="row" *ngIf="showPageReact">
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated" animateOnScroll animationName="animate__fadeInLeftBig"
         (mouseenter)="reactPortFolio = true"
         (mouseleave)="reactPortFolio = false"
       >
@@ -563,7 +566,7 @@
         </div>
       </div>
       <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0 align-items-stretch"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated" animateOnScroll animationName="animate__fadeInUp"
         (mouseenter)="showCovid = true"
         (mouseleave)="showCovid = false"
       >
@@ -585,7 +588,7 @@
       </div>
 
         <div
-        class="col-12 col-sm-6 col-md-4 m-0 p-0"
+        class="col-12 col-sm-6 col-md-4 m-0 p-0 animate__animated" animateOnScroll animationName="animate__fadeInRightBig"
         (mouseenter)="royalOak = true"
         (mouseleave)="royalOak = false"
       >
