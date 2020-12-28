@@ -12,7 +12,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { ModalComponent } from './about/modal/modal.component';
+import { ModalComponent } from './projects/modal/modal.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
