@@ -33,7 +33,7 @@ export class ProjectsComponent implements OnInit {
   tools = [
     'ALL',
     // 'VANNILA JS',
-    'FLUTTER/FIREBASE',
+    'FLUTTER',
     // 'NODE',
     'ANGULAR',
     'REACT',
@@ -103,11 +103,11 @@ export class ProjectsComponent implements OnInit {
     modalRef.componentInstance.body = 'A website that gives users live update of worldwide cases of covid19 aka corona virus.';
   }
 
-  openDexter() {
+  openBitnob() {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.title = 'Dexter';
     modalRef.componentInstance.imageUrl = '../../assets/dexter.jpg';
-    modalRef.componentInstance.linkUrl = '#';
+    modalRef.componentInstance.linkUrl = 'https://play.google.com/store/apps/details?id=com.app.bitnob&hl=en&gl=US';
     modalRef.componentInstance.body = 'A platform for learning, its has thousands of courses which users can enroll on at a very cheap price';
   }
 
