@@ -1,0 +1,32 @@
+.tools {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: block;
+}
+
+@media screen and (max-width: 480px){
+
+  .tools-img{
+    width: 60px;
+    height:auto;
+    background-color: aqua;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  .tools-img-ts{
+    width: 40px;
+    height:auto;
+    background-color: aqua;
+    margin-right: 20px;
+  }
+}
+
+.flutter-images{
+  display: inline;
+  margin: 0px !important;
+  padding:0px !important;
+}

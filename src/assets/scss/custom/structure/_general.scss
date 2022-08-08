@@ -1,0 +1,47 @@
+//
+// general.scss
+//
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-bottom: 60px;
+  overflow-x: hidden;
+  color: $text-color !important;
+}
+
+/* badges  */
+.symbol-badge {
+  border-radius: 100%;
+  font-size: 1.25rem;
+  color: #b5b5c3;
+  width: 12px;
+  height: 12px;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.93);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.can-pulse {
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.bg-primary-light {
+  background-color: $background;
+}
